@@ -5,45 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <h1 class="sr-only">Interactive Rating Component</h1>
+    <section class="rating__section">
+      <img class="rating__icon-image" src="./images/icon-star.svg" alt="">
+      <h2 class="rating__headline">How did we do?</h2>
+      <p class="rating__copy">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <form class="rating__form">
+        <label for="rating_1">
+          <input type="radio" id="rating_1" name="rating" value="1">
+          <span class="rating__form-radio-custom">1</span>
+        </label>
+        <label for="rating_2">
+          <input type="radio" id="rating_2"name="rating" value="2">
+          <span class="rating__form-radio-custom">2</span>
+        </label>
+        <label for="rating_3">
+          <input type="radio" id="rating_3" name="rating" value="3">
+          <span class="rating__form-radio-custom">3</span>
+        </label>
+        <label for="rating_4">
+          <input type="radio" id="rating_4" name="rating" value="4">
+          <span class="rating__form-radio-custom">4</span>
+        </label>
+        <label for="rating_5">
+          <input type="radio" id="rating_5" name="rating" value="5">
+          <span class="rating__form-radio-custom">5</span>
+        </label>
+      </form>
+      <button type="submit">SUBMIT</button>
+    </section>
+  </main>
 </body>
 </html>
