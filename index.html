@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
@@ -20,28 +21,30 @@
       <h2 class="rating__headline">How did we do?</h2>
       <p class="rating__copy">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <form class="rating__form">
-        <label for="rating_1">
-          <input type="radio" id="rating_1" name="rating" value="1">
-          <span class="rating__form-radio-custom">1</span>
-        </label>
-        <label for="rating_2">
-          <input type="radio" id="rating_2"name="rating" value="2">
-          <span class="rating__form-radio-custom">2</span>
-        </label>
-        <label for="rating_3">
-          <input type="radio" id="rating_3" name="rating" value="3">
-          <span class="rating__form-radio-custom">3</span>
-        </label>
-        <label for="rating_4">
-          <input type="radio" id="rating_4" name="rating" value="4">
-          <span class="rating__form-radio-custom">4</span>
-        </label>
-        <label for="rating_5">
-          <input type="radio" id="rating_5" name="rating" value="5">
-          <span class="rating__form-radio-custom">5</span>
-        </label>
+        <div class="rating__form-group">
+          <label for="rating_1">
+            <input type="radio" id="rating_1" name="rating" value="1">
+            <span class="rating__form-radio-custom">1</span>
+          </label>
+          <label for="rating_2">
+            <input type="radio" id="rating_2"name="rating" value="2">
+            <span class="rating__form-radio-custom">2</span>
+          </label>
+          <label for="rating_3">
+            <input type="radio" id="rating_3" name="rating" value="3">
+            <span class="rating__form-radio-custom">3</span>
+          </label>
+          <label for="rating_4">
+            <input type="radio" id="rating_4" name="rating" value="4">
+            <span class="rating__form-radio-custom">4</span>
+          </label>
+          <label for="rating_5">
+            <input type="radio" id="rating_5" name="rating" value="5">
+            <span class="rating__form-radio-custom">5</span>
+          </label>
+        </div>
+        <button type="submit">SUBMIT</button>
       </form>
-      <button type="submit">SUBMIT</button>
     </section>
   </main>
 </body>
