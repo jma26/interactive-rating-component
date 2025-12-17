@@ -57,7 +57,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 1px;
   padding: 0;
   margin: -1px;
-  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  clip: rect(0,0,0,0);
   border: 0;
 }
 
@@ -70,7 +71,7 @@ main {
   min-height: 100dvh;
 }
 
-.rating__section {
+.rating__section, .thankyou__section {
   background: linear-gradient(180deg, var(--grey-900), var(--grey-950));
   border-radius: 1rem;
   color: var(--grey-500);
@@ -82,6 +83,11 @@ main {
   padding: 1.5rem;
 }
 
+.thankyou__section {
+  align-items: center;
+  display: none;
+}
+
 .rating__icon-image {
   background-color: var(--grey-900);
   border-radius: 50%;
@@ -89,8 +95,12 @@ main {
   padding: 0.5rem;
 }
 
-.rating__headline {
+.rating__headline, .thankyou__headline {
   color: var(--white);
+}
+
+.thankyou__headline {
+  margin-block-start: 1rem;;
 }
 
 .rating__form {
@@ -152,8 +162,26 @@ button[type="submit"]:active, button[type="submit"]:focus, button[type="submit"]
   background-color: var(--white);
 }
 
+.thankyou__image {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.thankyou__rating {
+  background: var(--grey-900);
+  border-radius: 2rem;
+  color: var(--orange-500);
+  line-height: normal;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+}
+
+.thankyou__copy {
+  text-align: center;
+}
+
 @media only screen and (min-width: 52rem) {
-  .rating__headline {
+  .rating__headline, .thankyou__headline {
     font-size: 1.75rem;
   }
 
